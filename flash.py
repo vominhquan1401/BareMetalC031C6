@@ -31,6 +31,7 @@ def flash_firmware():
             programmer_cli_path,
             "-c",
             "port=SWD",
+            "mode=UR",
             "-w",
             bin_path,
             "0x08000000",
